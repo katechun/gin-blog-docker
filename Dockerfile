@@ -16,7 +16,7 @@ COPY . ./
 
 Run mkdir -p /go/src/golang.org/x/sys
 Run git clone https://github.com/golang/sys.git /go/src/golang.org/x/sys
-RUN go build .
+RUN go build blog 
 
 EXPOSE 8000
 ENTRYPOINT ["./blog"]
